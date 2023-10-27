@@ -101,14 +101,16 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="type-house" checked>
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="type-house"
+                    checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="product-group" value="type-house" checked>
+                  <input class="visually-hidden control-input" type="radio" name="product-group" value="type-house"
+                    checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
@@ -141,8 +143,47 @@
               до<input class="catalog-filter-input" type="number" name="min-price">₽
             </label>
           </fieldset>
+
+          <input type="submit" value="Применить">
+          <input type="reset" value="Сбросить">
         </form>
 
+      </section>
+
+      <section class="sorting">
+        <h2>Найдено гостиниц: 38</h2>
+        <form action="#" class="sorting-type">
+          <label class="visually-hidden" for="sorting">Сортировка</label>
+          <select class="select-control" name="sorting" id="sorting">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала сначала популярное</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать</button>
+        </form>
+        <ul class="bar">
+          <li class="bar-item">
+            <a href="#" class="button">
+              <span class="visually-hidden">
+                Показать список
+              </span>
+            </a>
+          </li>
+          <li class="bar-item">
+            <a href="#" class="button">
+              <span class="visually-hidden">
+                Показать карточки
+              </span>
+            </a>
+          </li>
+          <li class="bar-item">
+            <a href="#" class="button">
+              <span class="visually-hidden">
+                Показать плитку
+              </span>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
