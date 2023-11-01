@@ -9,15 +9,22 @@
 
   <body>
     <header class="page-header">
-      <nav class="navigation">
+
+      <nav class="navigation-wrapper">
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">Главная</a></li>
-          <li class="navigation-item"><a href="#"></a>О Седоне</li>
-          <li class="navigation-item"><a href="catalog.html"></a>Гостиницы</li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link current-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Гостиницы</a>
+          </li>
         </ul>
       </nav>
 
-      <a href="#" class="logo">
+      <a href="#" class="header-logo">
         <img src="" alt="Логотип" class="logo-img">
       </a>
 
@@ -31,20 +38,18 @@
         </li>
         <li class="navigation-item">
           <a href="" class="navigation-link">
-            <span class="visually-hidden">
-              Лайки
-            </span>
+            <span class="visually-hidden"> Лайки</span>
+            <span class="favourite-number">12</span>
           </a>
         </li>
         <li class="navigation-item">
           <a href="" class="navigation-link">
-            <span class="visually-hidden">
-              Хочу сюда
-            </span>
+            Хочу сюда!
           </a>
         </li>
       </ul>
     </header>
+
 
     <main class="main-inner">
       <header class="inner-header">
@@ -323,37 +328,45 @@
     </main>
 
     <footer>
-      <ul class="footer-social">
-        <li class="social-item">
-          <a href="" class="social-link">
-            <span class="visually-hidden">
-              twitter
-            </span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a href="" class="navigation-link">
-            <span class="visually-hidden">
-              facebook
-            </span>
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a href="" class="navigation-link">
-            <span class="visually-hidden">
-              youtube
-            </span>
-          </a>
-        </li>
-      </ul>
+      <section class="social">
+        <h2 class="visually-hidden">Список социальных сетей</h2>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://twitter.com" class="social-link">
+              <span class="visually-hidden">
+                twitter
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://facebook.com" class="navigation-link">
+              <span class="visually-hidden">
+                facebook
+              </span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="https://youtube.com" class="navigation-link">
+              <span class="visually-hidden">
+                youtube
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-      <address>
-        <a href="tel:+7 (812) 812-12-12" class="address-phone">+7 (812) 812-12-12</a>
-      </address>
+      <section class="footer-phone">
+        <h2 class="visually-hidden">Контактный телефон</h2>
+        <a class="footer-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
 
-      <a href="#" class="footer-logo">
-        <img src="#" alt="Логотип академии">
-      </a>
+      <section class="footer-logo">
+        <h2 class="visually-hidden">Ссылка логотоип HTML Academy</h2>
+        <a href="#" class="link-logo">
+          <img src="#" alt="Логотип академии">
+        </a>
+      </section>
+
     </footer>
   </body>
 
