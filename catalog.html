@@ -8,6 +8,7 @@
   </head>
 
   <body>
+
     <header class="page-header">
 
       <nav class="navigation-wrapper">
@@ -52,29 +53,30 @@
 
 
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Каталог гостиниц</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-link">
-            <a href="index.html">
-              <span class="visually-hidden">Домой</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-link">
-            <a href="#">
-              Гостиницы
-            </a>
-          </li>
-        </ul>
-      </header>
+      <div class="inner-catalog">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Каталог гостиниц</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-link">
+              <a href="index.html">
+                <span class="visually-hidden">Домой</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-link">
+              <a href="#">
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+        </header>
 
-      <section class="catalog-products">
+
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-        <form action="" method="post">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
 
-            <legend>Инфраструктура:</legend>
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -102,7 +104,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend>Тип жилья:</legend>
+            <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -131,29 +133,40 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend>Стоимость, ₽:</legend>
-            <button class="range-toggle toggle-min">
-              <span class="visually-hidden">Изменить минимальную цену</span>
-            </button>
+            <legend class="catalog-filter-title">Стоимость, &#8381;</legend>
+            <div class="range">
 
-            <button class="range-toggle toggle-max">
-              <span class="visually-hidden">Изменить максимальную цену цену</span>
-            </button>
+              <div class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                  <input class="catalog-min" type="number" name="min-price" value="0">
+                  <span class="from-to">от</span>
+                </label>
 
-            <label class="catalog-filter-label">
-              от<input class="catalog-filter-input" type="number" name="min-price">₽
-            </label>
+                <label class="catalog-filter-label">
+                  <input class="catalog-max" type="number" name="max-price" value="9000">
+                  <span class="from-to">до</span>
+                </label>
+              </div>
 
-            <label class="catalog-filter-label">
-              до<input class="catalog-filter-input" type="number" name="min-price">₽
-            </label>
+              <div class="range-scale">
+                <div class="range-bar">
+                  <button class="range-toggle toggle-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+
+                  <button class="range-toggle toggle-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену цену</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
-
+          <!-- SEARCH SECTION -->
           <input type="submit" value="Применить">
           <input type="reset" value="Сбросить">
         </form>
 
-      </section>
+      </div>
 
       <section class="sorting">
         <h2>Найдено гостиниц: 38</h2>
