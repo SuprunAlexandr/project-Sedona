@@ -172,166 +172,163 @@
       </div>
       <!-- SEARCH SECTION -->
       <section class="sorting">
-        <h2>Найдено гостиниц: 38</h2>
-        <form action="#" class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" name="sorting" id="sorting">
+        <h2 class="visually-hidden">Глобальные результаты поиска гостиниц.</h2>
+        <section class="inner-search">
+          <h3 class="visually-hidden">Группировки результатов гостиниц.</h3>
+          <p class="found-hotel">НАЙДЕНО ГОСТИНИЦ:
+            <span class="found-hotel"> 38</span>
+          </p>
+          <select class="select-control" aria-label="Сортировка.">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
-            <option value="popular">Сначала сначала популярное</option>
+            <option value="popular">Сначала популярные</option>
           </select>
-          <button class="visually-hidden" type="submit">Отсортировать</button>
-        </form>
-        <ul class="bar">
-          <li class="bar-item">
-            <a href="#" class="button">
-              <span class="visually-hidden">
-                Показать список
-              </span>
-            </a>
-          </li>
-          <li class="bar-item">
-            <a href="#" class="button">
-              <span class="visually-hidden">
-                Показать карточки
-              </span>
-            </a>
-          </li>
-          <li class="bar-item">
-            <a href="#" class="button">
-              <span class="visually-hidden">
-                Показать плитку
-              </span>
-            </a>
-          </li>
-        </ul>
-      </section>
 
-      <section class="hotels">
-        <ul class="hotels-list">
-          <li class="hotels-item">
-            <h3>Amara Resort & Spa</h3>
-            <img src="#" alt="Гостинница Amara">
-            <span>Гостиница</span>
-            <span>От 4000 ₽</span>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Подробнее
-              </span>
-            </a>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-            <span class="stars"></span>
-            <p class="ranked">
-              Рейтинг: 8,5
-            </p>
-          </li>
-          <li class="hotels-item">
-            <h3>Desert Quail Inn</h3>
-            <img src="#" alt="Гостинница Amara">
-            <span>Мотель</span>
-            <span>От 3000 ₽</span>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Подробнее
-              </span>
-            </a>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-            <span class="stars"></span>
-            <p class="ranked">
-              Рейтинг: 8,9
-            </p>
-          </li>
-          <li class="hotels-item">
-            <h3>Villas at Poco Diablo</h3>
-            <img src="#" alt="Гостинница Amara">
-            <span>Апартаменты</span>
-            <span>От 2000 ₽</span>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Подробнее
-              </span>
-            </a>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-            <span class="stars"></span>
-            <p class="ranked">
-              Рейтинг: 9,2
-            </p>
-          </li>
-          <li class="hotels-item">
-            <h3>GreenTree Inn</h3>
-            <img src="#" alt="Гостинница Amara">
-            <span>Гостиница</span>
-            <span>От 3000 ₽</span>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Подробнее
-              </span>
-            </a>
-            <a href="#" class="more-details">
-              <span class="visually-hidden">
-                Избранное
-              </span>
-            </a>
-            <span class="stars"></span>
-            <p class="ranked">
-              Рейтинг: 9,2
-            </p>
-          </li>
-          <li class="hotels-item"></li>
-        </ul>
+          <ul class="display-list">
+            <li class="display-item">
+              <a class="display-button view-table">
+                <span class="visually-hidden">Показать таблицей.</span>
+              </a>
+            </li>
+            <li class="display-item">
+              <a class="display-button view-item" href="#">
+                <span class="visually-hidden">Показать по одной карточке.</span>
+              </a>
+            </li>
+            <li class="display-item">
+              <a class="display-button view-list current-button" href="#">
+                <span class="visually-hidden">Показать списком.</span>
+              </a>
+            </li>
+          </ul>
+        </section>
 
-        <button>Загрузить ещё</button>
+        <section class="hotels">
+          <ul class="hotels-list">
+            <li class="hotels-item">
+              <h3>Amara Resort & Spa</h3>
+              <img src="#" alt="Гостинница Amara">
+              <span>Гостиница</span>
+              <span>От 4000 ₽</span>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Подробнее
+                </span>
+              </a>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+              <span class="stars"></span>
+              <p class="ranked">
+                Рейтинг: 8,5
+              </p>
+            </li>
+            <li class="hotels-item">
+              <h3>Desert Quail Inn</h3>
+              <img src="#" alt="Гостинница Amara">
+              <span>Мотель</span>
+              <span>От 3000 ₽</span>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Подробнее
+                </span>
+              </a>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+              <span class="stars"></span>
+              <p class="ranked">
+                Рейтинг: 8,9
+              </p>
+            </li>
+            <li class="hotels-item">
+              <h3>Villas at Poco Diablo</h3>
+              <img src="#" alt="Гостинница Amara">
+              <span>Апартаменты</span>
+              <span>От 2000 ₽</span>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Подробнее
+                </span>
+              </a>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+              <span class="stars"></span>
+              <p class="ranked">
+                Рейтинг: 9,2
+              </p>
+            </li>
+            <li class="hotels-item">
+              <h3>GreenTree Inn</h3>
+              <img src="#" alt="Гостинница Amara">
+              <span>Гостиница</span>
+              <span>От 3000 ₽</span>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Подробнее
+                </span>
+              </a>
+              <a href="#" class="more-details">
+                <span class="visually-hidden">
+                  Избранное
+                </span>
+              </a>
+              <span class="stars"></span>
+              <p class="ranked">
+                Рейтинг: 9,2
+              </p>
+            </li>
+            <li class="hotels-item"></li>
+          </ul>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a href="#" class="pagination-link pagination-current">
-              1
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">
-              2
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">
-              3
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">
-              4
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">
-              ...
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="pagination-link">
-              10
-            </a>
-          </li>
-        </ul>
+          <button>Загрузить ещё</button>
 
-        <span>Гостиниц на странице:</span>
-        <select name="" id="">
-          <option value="4">4</option>
-        </select>
 
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a href="#" class="pagination-link pagination-current">
+                1
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">
+                2
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">
+                3
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">
+                4
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">
+                ...
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">
+                10
+              </a>
+            </li>
+          </ul>
+
+          <span>Гостиниц на странице:</span>
+          <select name="" id="">
+            <option value="4">4</option>
+          </select>
+        </section>
       </section>
 
       <section class="subscribe">
