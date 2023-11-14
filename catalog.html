@@ -312,13 +312,18 @@
           </select>
         </section>
       </section>
-      <section class="subscribe">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="email" placeholder="email">
-        <button>Подписаться</button>
-      </section>
 
+      <section class="subscribe">
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-about">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="form-wrapper" action="#" method="post">
+          <label>
+            <span class="visually-hidden">Ваш e-mail.</span>
+            <input class="subscribe-field" type="email" name="email-field" placeholder="Ваш e-mail" required>
+          </label>
+          <button class="subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
 
     <footer>
